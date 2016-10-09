@@ -25,6 +25,8 @@ typedef void(^MyDataBlock) (id dataBlock);
 @property (nonatomic, retain) UIImageView *pageImageView;
 @property (nonatomic, retain) UIButton *button;
 @property (nonatomic, retain) UILabel *nameLable;
+@property (nonatomic, assign) NSInteger lastPage;
+
 @property (nonatomic, assign) id<HXLImageLeadingPageCellDelegate>myDelegate;
 
 @end

@@ -19,29 +19,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+#pragma Mark -- 获取文件路径
+    NSArray *array = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentPath = [array lastObject];
     
-    NSString * userHasOnboared = [[NSUserDefaults standardUserDefaults] objectForKey:@"user"];
-    
-    //引导页判断是否第一次进入app
-    
-    if ([userHasOnboared isEqualToString:@"yes"]) {
-        
+    NSLog(@"document = %@",documentPath);
+#pragma Mark -- 引导页判断是否第一次进入该版本的app
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
-        [self viewController];
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+
+    NSString *appVersion = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+
+    NSString *everLaunchThisVersion = [NSString stringWithFormat:@"everLaunched%@", appVersion];
+    NSLog(@"everLaunchThisVersion = %@",everLaunchThisVersion);
+    if(![userDefaults boolForKey:everLaunchThisVersion]){
+        [userDefaults setBool:YES forKey:everLaunchThisVersion];
+        [userDefaults synchronize];
         
-    }else {
-        [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"user"];
-        
-        HXLLeadingPageViewController *leadPageVC = [[HXLLeadingPageViewController alloc] initWithArray:@[@"Landingpage6.png",@"Landingpage3.png",@"Landingpage5.png"] andAction:^{
+        HXLLeadingPageViewController *leadPageVC = [[HXLLeadingPageViewController alloc] initWithArray:@[@"Landingpage1.png",@"Landingpage2.png",@"Landingpage3.png"] andAction:^{
             [self viewController];
         }];
         self.window.rootViewController = leadPageVC;
-        
-        
+    }else{
+        [self viewController];
+
     }
     
     application.statusBarStyle = UIStatusBarStyleLightContent;
-    //
+
     [self.window makeKeyAndVisible];
     
     return YES;

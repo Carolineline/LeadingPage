@@ -15,13 +15,13 @@
 		C94A72B41BE4F48900ED3A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94A72B21BE4F48900ED3A90 /* LaunchScreen.storyboard */; };
 		C94A72BF1BE4F48900ED3A90 /* LeadingPageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A72BE1BE4F48900ED3A90 /* LeadingPageTests.m */; };
 		C94A72CA1BE4F48900ED3A90 /* LeadingPageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A72C91BE4F48900ED3A90 /* LeadingPageUITests.m */; };
-		C94A72ED1BE4F98A00ED3A90 /* HXLLeadingPageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A72E61BE4F98A00ED3A90 /* HXLLeadingPageCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		C94A72EE1BE4F98A00ED3A90 /* HXLLeadingPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A72E81BE4F98A00ED3A90 /* HXLLeadingPageView.m */; settings = {ASSET_TAGS = (); }; };
-		C94A72EF1BE4F98A00ED3A90 /* HXLLeadingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A72EA1BE4F98A00ED3A90 /* HXLLeadingPageViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C94A72F01BE4F98A00ED3A90 /* UIImageView+XLWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A72EC1BE4F98A00ED3A90 /* UIImageView+XLWebCache.m */; settings = {ASSET_TAGS = (); }; };
-		C94A72F51BE5003F00ED3A90 /* Landingpage3.png in Resources */ = {isa = PBXBuildFile; fileRef = C94A72F21BE5003F00ED3A90 /* Landingpage3.png */; settings = {ASSET_TAGS = (); }; };
-		C94A72F61BE5003F00ED3A90 /* Landingpage5.png in Resources */ = {isa = PBXBuildFile; fileRef = C94A72F31BE5003F00ED3A90 /* Landingpage5.png */; settings = {ASSET_TAGS = (); }; };
-		C94A72F71BE5003F00ED3A90 /* Landingpage6.png in Resources */ = {isa = PBXBuildFile; fileRef = C94A72F41BE5003F00ED3A90 /* Landingpage6.png */; settings = {ASSET_TAGS = (); }; };
+		C94A72ED1BE4F98A00ED3A90 /* HXLLeadingPageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A72E61BE4F98A00ED3A90 /* HXLLeadingPageCollectionViewCell.m */; };
+		C94A72EE1BE4F98A00ED3A90 /* HXLLeadingPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A72E81BE4F98A00ED3A90 /* HXLLeadingPageView.m */; };
+		C94A72EF1BE4F98A00ED3A90 /* HXLLeadingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A72EA1BE4F98A00ED3A90 /* HXLLeadingPageViewController.m */; };
+		C94A72F01BE4F98A00ED3A90 /* UIImageView+XLWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A72EC1BE4F98A00ED3A90 /* UIImageView+XLWebCache.m */; };
+		C94A72F51BE5003F00ED3A90 /* Landingpage2.png in Resources */ = {isa = PBXBuildFile; fileRef = C94A72F21BE5003F00ED3A90 /* Landingpage2.png */; };
+		C94A72F61BE5003F00ED3A90 /* Landingpage3.png in Resources */ = {isa = PBXBuildFile; fileRef = C94A72F31BE5003F00ED3A90 /* Landingpage3.png */; };
+		C94A72F71BE5003F00ED3A90 /* Landingpage1.png in Resources */ = {isa = PBXBuildFile; fileRef = C94A72F41BE5003F00ED3A90 /* Landingpage1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +66,9 @@
 		C94A72EA1BE4F98A00ED3A90 /* HXLLeadingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXLLeadingPageViewController.m; sourceTree = "<group>"; };
 		C94A72EB1BE4F98A00ED3A90 /* UIImageView+XLWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XLWebCache.h"; sourceTree = "<group>"; };
 		C94A72EC1BE4F98A00ED3A90 /* UIImageView+XLWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XLWebCache.m"; sourceTree = "<group>"; };
-		C94A72F21BE5003F00ED3A90 /* Landingpage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Landingpage3.png; sourceTree = "<group>"; };
-		C94A72F31BE5003F00ED3A90 /* Landingpage5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Landingpage5.png; sourceTree = "<group>"; };
-		C94A72F41BE5003F00ED3A90 /* Landingpage6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Landingpage6.png; sourceTree = "<group>"; };
+		C94A72F21BE5003F00ED3A90 /* Landingpage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Landingpage2.png; sourceTree = "<group>"; };
+		C94A72F31BE5003F00ED3A90 /* Landingpage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Landingpage3.png; sourceTree = "<group>"; };
+		C94A72F41BE5003F00ED3A90 /* Landingpage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Landingpage1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,9 +178,9 @@
 		C94A72F11BE5003F00ED3A90 /* landpageImage */ = {
 			isa = PBXGroup;
 			children = (
-				C94A72F21BE5003F00ED3A90 /* Landingpage3.png */,
-				C94A72F31BE5003F00ED3A90 /* Landingpage5.png */,
-				C94A72F41BE5003F00ED3A90 /* Landingpage6.png */,
+				C94A72F21BE5003F00ED3A90 /* Landingpage2.png */,
+				C94A72F31BE5003F00ED3A90 /* Landingpage3.png */,
+				C94A72F41BE5003F00ED3A90 /* Landingpage1.png */,
 			);
 			path = landpageImage;
 			sourceTree = "<group>";
@@ -288,9 +288,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C94A72F61BE5003F00ED3A90 /* Landingpage5.png in Resources */,
-				C94A72F71BE5003F00ED3A90 /* Landingpage6.png in Resources */,
-				C94A72F51BE5003F00ED3A90 /* Landingpage3.png in Resources */,
+				C94A72F61BE5003F00ED3A90 /* Landingpage3.png in Resources */,
+				C94A72F71BE5003F00ED3A90 /* Landingpage1.png in Resources */,
+				C94A72F51BE5003F00ED3A90 /* Landingpage2.png in Resources */,
 				C94A72B41BE4F48900ED3A90 /* LaunchScreen.storyboard in Resources */,
 				C94A72B11BE4F48900ED3A90 /* Assets.xcassets in Resources */,
 				C94A72AF1BE4F48900ED3A90 /* Main.storyboard in Resources */,
@@ -548,6 +548,7 @@
 				C94A72D01BE4F48900ED3A90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C94A72D11BE4F48900ED3A90 /* Build configuration list for PBXNativeTarget "LeadingPageTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +557,7 @@
 				C94A72D31BE4F48900ED3A90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C94A72D41BE4F48900ED3A90 /* Build configuration list for PBXNativeTarget "LeadingPageUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +566,7 @@
 				C94A72D61BE4F48900ED3A90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

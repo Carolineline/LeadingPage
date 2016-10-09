@@ -56,7 +56,16 @@
     
 }
 
-
+-(void)setLastPage:(NSInteger)lastPage{
+    if (lastPage) {
+        self.button = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.button.frame = CGRectMake(0, 0, 375, 667);
+        [self.button addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+        //        [self.button setTitle:@"立即进入" forState:UIControlStateNormal];
+        [self.contentView addSubview:self.button];
+        
+    }
+}
 -(void)btnAction:(UIButton *)btn
 {
     [self.myDelegate ImageLeadingPageCellDidSelectedWith:self.tag - 1000];

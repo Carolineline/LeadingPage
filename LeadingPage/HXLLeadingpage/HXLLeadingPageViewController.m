@@ -57,7 +57,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"111111");
     self.navigationController.navigationBar.translucent = NO;
     
     HXLLeadingPageView *pageView = [[HXLLeadingPageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];

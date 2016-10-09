@@ -77,10 +77,12 @@
     NSLog(@"cell");
     
     HXLLeadingPageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"leadindPageresure" forIndexPath:indexPath];
-    cell.tag = 1000 + indexPath.row;
-  
-    
     cell.myDelegate =self;
+    if (indexPath.row == _LeadImageArray.count -1) {
+        cell.lastPage = _LeadImageArray.count -1;
+        
+    }
+    NSLog(@"cell.lastPage = %ld",(long)cell.lastPage);
     
     if ([_LeadImageArray[indexPath.row] isKindOfClass:[NSString class]]) {
         if ([_LeadImageArray[indexPath.row] hasPrefix:@"http"]) {
