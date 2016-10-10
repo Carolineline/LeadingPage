@@ -18,11 +18,7 @@
 
 @implementation HXLLeadingPageViewController
 
-//- (void)dealloc {
-//    [_array release];
-//    Block_release(_pushBlock);
-//    [super dealloc];
-//}
+
 
 + (instancetype)hxlLeadingPageWithArray:(NSArray *)array andAction:(PushBlock)action {
     

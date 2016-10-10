@@ -102,10 +102,6 @@
     {
         cell.pageImageView.image = [UIImage imageNamed:self.LeadImageArray [indexPath.item]];
     }
-    if (indexPath.row == 2) {
-        [cell.button setTitle:@"立即进入" forState:UIControlStateNormal];
-
-    }
 
     
     return cell;
@@ -116,6 +112,7 @@
 {
     CGFloat shift = scrollView.contentOffset.x;//偏移量
     NSLog(@"shift = %f",shift);
+    NSLog(@"scrollView.contentSize.width = %f --- %f",scrollView.contentSize.width,[UIScreen mainScreen].bounds.size.width);
     if (shift >= 0 && shift <= scrollView.contentSize.width - [UIScreen mainScreen].bounds.size.width) {
         //角标
         NSIndexPath *previousIndexPath = [NSIndexPath indexPathForItem:scrollView.contentOffset.x/[UIScreen mainScreen].bounds.size.width inSection:0];

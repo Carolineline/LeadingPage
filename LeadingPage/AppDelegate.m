@@ -42,7 +42,7 @@
         }];
         self.window.rootViewController = leadPageVC;
     }else{
-        [self viewController];
+        [self viewController];//根视图
 
     }
     

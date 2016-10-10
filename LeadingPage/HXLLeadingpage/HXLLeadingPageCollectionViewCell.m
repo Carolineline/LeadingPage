@@ -37,21 +37,10 @@
     
     self.pageImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
     [self.scrollView addSubview:self.pageImageView];
-    self.nameLable = [[UILabel alloc] initWithFrame:CGRectMake(0, self.bounds.size.height- 30, self.bounds.size.width, 30)];
-    [self.scrollView addSubview:self.nameLable];
+//    self.nameLable = [[UILabel alloc] initWithFrame:CGRectMake(0, self.bounds.size.height- 30, self.bounds.size.width, 30)];
+//    [self.scrollView addSubview:self.nameLable];
 //    self.nameLable.text = @"next";
-    
-    
-    self.nameLable.textAlignment = 1;
-    NSLog(@"tag = %ld",self.tag);
-    if (self.tag == 0) {
-        self.button = [UIButton buttonWithType:UIButtonTypeCustom];
-        self.button.frame = CGRectMake(130, 270, 100 , 30);
-        [self.button addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
-//        [self.button setTitle:@"立即进入" forState:UIControlStateNormal];
-        [self.contentView addSubview:self.button];
-        
-    }
+//    self.nameLable.textAlignment = 1;
     
     
 }
@@ -59,9 +48,12 @@
 -(void)setLastPage:(NSInteger)lastPage{
     if (lastPage) {
         self.button = [UIButton buttonWithType:UIButtonTypeCustom];
-        self.button.frame = CGRectMake(0, 0, 375, 667);
+    //为实现整个页面都可点击进入，根据需求设定就好
+//        self.button.frame = CGRectMake(0, 0, self.contentView.bounds.size.width, self.contentView.bounds.size.height);
+        self.button.frame = CGRectMake(130, 270, 100 , 30);
+
         [self.button addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
-        //        [self.button setTitle:@"立即进入" forState:UIControlStateNormal];
+        [self.button setTitle:@"立即进入" forState:UIControlStateNormal];
         [self.contentView addSubview:self.button];
         
     }
